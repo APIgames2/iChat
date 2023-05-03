@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/navbar';
+import CardHome from './components/card';
+import ReactPlayer from 'react-player'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <div className=''>
+      <ReactPlayer
+        width={"100%"}
+        height={"100%"}
+        controls
+        url={"./blue.mp4"}
+      />
+      </div>
+      <div className="p-4 md:flex md:flex-row md:justify-center">
+        <div className="md:p-4">
+          <CardHome/>
+        </div>
+        <div className="py-2">
+        </div>
+        <div className="md:p-4">
+          <CardHome/>
+        </div>
+      </div>
     </div>
   );
 }
