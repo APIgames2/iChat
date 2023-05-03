@@ -2,9 +2,8 @@
 
 function CardHome() {
     return (
-        <a
+        <button
         className="relative flex items-start justify-between rounded-xl border border-gray-100 p-4 shadow-xl sm:p-6 lg:p-8"
-        href="#"
         >
         <div className="pt-4 text-gray-500">
             <svg
@@ -37,7 +36,7 @@ function CardHome() {
         >
             4.3
         </span>
-        </a>
+        </button>
     );
 }
 
