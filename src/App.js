@@ -1,7 +1,6 @@
 import './App.css';
 import NavBar from './components/navbar';
 import CardHome from './components/card';
-import ReactPlayer from 'react-player'
 
 function App() {
   return (
